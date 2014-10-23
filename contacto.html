@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]> ><! <![endif]-->
+<html lang='en'>
+  <!-- <![endif] -->
+  <!-- BEGIN HEAD -->
+  <head>
+    <meta charset='utf-8'>
+    <title>Instituto Basilea</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='' name='description'>
+    <meta content='' name='author'>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="assets/stylesheets/font-awesome/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link href="assets/stylesheets/fancybox/source/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/revolution_slider/css/rs-style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/revolution_slider/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/bxslider/jquery.bxslider.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/javascripts/bootstrap-toastr/toastr.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="assets/stylesheets/style-metronic.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/themes/blue.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/style-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link href='assets/images/favicon.ico' rel='shortcut icon'>
+  </head>
+  <!-- END HEAD -->
+  <!-- BEGIN BODY -->
+  <body>
+    <div class='header navbar navbar-default navbar-static-top'>
+      <!-- BEGIN TOP BAR -->
+      <div class='front-topbar'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-9 col-sm-9'>
+              <ul class='list-unstyle inline'>
+                <li><i class='fa fa-phone topbar-info-icon top-2'></i>Contacto:
+                  <span>+56 2 26962366</span>
+                </li>
+                <li class='sep'>
+                  <span></span>
+                </li>
+                <li class='login-reg-links'><i class='fa fa-envelope-o topbar-info-icon top-2'></i>Email:
+                  <span>contacto@institutobasilea.cl</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle btn navbar-btn' data-target='.navbar-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand logo-v1' href='index.html'>
+            <img alt="logo" id="logoimg" src="assets/images/logo_banner.png" />
+          </a>
+        </div>
+        <div class='navbar-collapse collapse'>
+          <ul class='nav navbar-nav'>
+            <li class='dropdown active'>
+              <a href='index.html'>
+                Inicio
+              </a>
+            </li>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-close-others='false' data-delay='0' data-hover='dropdown' data-toggle='dropdown' href='#'>
+                Instituto
+                <i class='fa fa-angle-down'></i>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='nosotros.html'>¿Quiénes somos?</a>
+                </li>
+                <li>
+                  <a href='politica-calidad.html'>Política de Calidad</a>
+                </li>
+                <li>
+                  <a href='faq.html'>Preguntas Frecuentes</a>
+                </li>
+                <li>
+                  <a href='faq.html'>Links de Interés</a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown'>
+              <a class='dropdown-toggle' data-close-others='false' data-delay='0' data-hover='dropdown' data-toggle='dropdown' href='#'>
+                Cursos
+                <i class='fa fa-angle-down'></i>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='curso-cajero-bancario.html'>Cajero Bancario</a>
+                </li>
+                <li>
+                  <a href='curso-moneda-extranjera.html'>Moneda Extranjera</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='contacto.html'>Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- BEGIN TOP NAVIGATION MENU -->
+      </div>
+    </div>
+    <div class='main'>
+      <div class='container'>
+        <div class='row margin-bottom-40'>
+          <div class='col-md-12'>
+            <h1>Contacto e Inscripciones</h1>
+            <div class='content-page'>
+              <div class='row'>
+                <div class='col-md-12'>
+                  <div class='gmaps margin-bottom-40' id='map' style='height:300px;'></div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-9 col-sm-9">
+                  <h2>Formulario de contacto</h2>
+                  <p></p>
+                  
+                  <!-- BEGIN FORM-->
+                  <form name="contactform" method="post" action="enviar-formulario.php" role="form">
+                    <div class="form-group">
+                      <label for="first_name">Nombre:</label>
+                      <input type="text" class="form-control" id="first_name" name="first_name">
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name">Apellido:</label>
+                      <input type="text" class="form-control" id="last_name" name="last_name">
+                    </div>
+                    <div class="form-group">
+                      <label for="telephone">Telefono de contacto:</label>
+                      <input type="phone" class="form-control" id="telephone" name="telephone">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="comments">Mensaje:</label>
+                      <textarea class="form-control" rows="5" id="comments" name="comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="icon-ok"></i> Enviar</button>
+                    <button type="button" class="btn btn-default">Cancel</button>
+                  </form>
+                  <!-- END FORM-->
+                </div>
+
+
+                <div class='col-md-3 col-sm-3 sidebar2'>
+                  <h2>Contacto</h2>
+                  <address>
+                    <strong>Instituto Basilea</strong>
+                    <br>
+                      Avenida Libertador Bernardo O'Higgins #1112 oficina 503
+                      <br>
+                        Santiago Centro, Santiago
+                        <br>
+                          <abbr title='Phone'>T:</abbr>
+                          +56 2 26962366
+                        </br>
+                      </br>
+                    </br>
+                  </address>
+                  <address>
+                    <strong>Email</strong>
+                    <br>
+                      <a href='mailto:contacto@institutobasilea.cl'>contacto@institutobasilea.cl</a>
+                    </br>
+                  </address>
+                  <ul class='social-icons margin-bottom-40'>
+                    <li>
+                      <a class='facebook' data-original-title='facebook' href='#'></a>
+                    </li>
+                    <li>
+                      <a class='linkedin' data-original-title='linkedin' href='#'></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='footer' style='padding: 0px;'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12 col-sm-4 space-mobile'>
+            <h2>Contactate con nosotros</h2>
+            <address class='margin-bottom-40'>
+              Avenida Libertador Bernardo O'Higgins #1112 oficina 503
+              <br>
+              Santiago Centro, Santiago
+              <br>
+                F: +56 2 26962366 | M:
+                <a href= 'mailto:contacto@institutobasilea.cl'>contacto@institutobasilea.cl</a>
+              </br>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='copyright'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-8 col-sm-8'>
+            <p>
+              <span class='margin-right-10'>2014 © Metronic theme.</span>
+            </p>
+          </div>
+          <div class='col-md-4 col-sm-4'>
+            <ul class='social-footer'>
+              <li>
+                <a href='https://www.facebook.com/InstitutoBasilea?ref=ts&amp;fref=ts'>
+                  <i class='fa fa-facebook'></i>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/company/instituto-basilea/'>
+                  <i class='fa fa-linkedin'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END COPYRIGHT -->
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS(REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+      <script src="respond.min.js"></script>
+    <![endif]-->
+    <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    <script src="assets/javascripts/gmaps/gmaps.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/jquery-1.10.2.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/jquery-migrate-1.2.1.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/bootstrap/js/bootstrap.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/hover-dropdown.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/back-to-top.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/fancybox/source/jquery.fancybox.pack.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/bxslider/jquery.bxslider.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/scripts/app.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/scripts/index.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/bootstrap-toastr/toastr.min.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/forms/jquery.validate.js?body=1" type="text/javascript"></script>
+    <script src="assets/javascripts/scripts/contact-us.js?body=1" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+        App.init();
+        App.initBxSlider();
+        Index.initRevolutionSlider();
+        ContactUs.init();
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51538916-1', 'auto');
+  ga('send', 'pageview');
+      });
+    </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+  </body>
+  <!-- END BODY -->
+</html>
