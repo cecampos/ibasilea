@@ -7,3 +7,9 @@
   font-size: 12px;
   padding-left: 2px;
 }
+
+.myimg-circle{
+  width: 120px !important;
+  height: 120px !important;
+  webkit-border-radius: 50%;
+}
